@@ -4,6 +4,6 @@ public class Hello {
     @RequestMapping("/")
     public String sayHello(){
     
-    return "abcdefg. Hello ALL, " + new Date();
+    return "abcdefg. Hello 123, " + new Date();
 }
 }

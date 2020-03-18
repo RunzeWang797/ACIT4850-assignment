@@ -1,9 +1,7 @@
 @RestController
 public class Hello {
-
     @RequestMapping("/")
     public String sayHello(){
-    
-    return "abcdefg. Hello jenkinsxx, " + new Date();
+    return "3. Hello jenkins, " + new Date();
 }
 }

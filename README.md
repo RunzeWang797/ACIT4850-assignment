@@ -1,3 +1,0 @@
-# CarLot-demo
-lll
-asdasd

@@ -1,14 +1,15 @@
-pipeline{
-    agent any 
-    stages{
-         steps {
-         sh `pip install -r requirements.txt`    
-            }
-    
-        stage(‘Unit Test’) {
-        steps {
-            sh ‘python3 –m unitest test_point_manager’
-            }
-        }
-    }
+pipeline {
+     agent any
+     stages {
+         stage('Build') {
+             steps {
+                 sh 'pip install -r requirements.txt'
+                 }
+                 }
+             stage('Unit Test') {
+                 steps {
+                 sh 'python3 –m unitest test_point_manager'
+             }
+         }
+     }
 }

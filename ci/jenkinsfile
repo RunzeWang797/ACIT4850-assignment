@@ -8,7 +8,7 @@ pipeline {
                  }
              stage('Unit Test') {
                  steps {
-                 sh 'python3 –m unitest test_point_manager'
+                 sh 'python3 -m unitest test_point_manager'
              }
          }
      }
